@@ -1,0 +1,24 @@
+{
+  "name": "vue-express-stack",
+  "version": "0.0.1",
+  "description": "Base Repository for a UIkit (3) Vue(3) Express (4) Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "server.js",
+    "devServer": "nodemon server.js",
+    "devClient": "cd client && npm run serve",
+    "devStart": "concurrently \"npm run devServer\" \"npm run devClient\"",
+    "test": "./tests/test.mjs"
+  },
+  "keywords": [],
+  "author": "Marco Rensch",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
